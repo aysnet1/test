@@ -14,7 +14,7 @@ collections:
     format: "json"
     fields:
       - label: "Author"
-        name: "author"
+        name: "title"
         widget: "string"
       - label: "post"
         name: "post"
