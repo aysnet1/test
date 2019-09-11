@@ -1,76 +1,17 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
-
+ name: git-gateway
+ 
 collections:
-  - name: "service" # Used in routes, e.g., /admin/collections/blog
-    label: "services" # Used in the UI
-    folder: "content/service/" # The path to the folder where the documents are stored
-    identifier_field: name
-    delete: false
-    format: json
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: "json
     fields: # The fields for each document, usually in front matter
-      - name: "title"
-        label: "title"
-        widget: string
-        default: "items"
-        editor:
-           preview: false
-      - label: "Services"
-        name: "item"
-        widget: "list"
-        fields:
-          - {label: "title", name: "title", widget: string}
-          - {label: "Description", name: "description", widget: string}
-          - {label: "Content", name: "Content", widget: text ,required: false}
-          - {label: "Image", name: "img", widget: image}
-  - name: "Compte" # Used in routes, e.g., /admin/collections/blog
-    label: "Compte" # Used in the UI
-    folder: "content/config" # The path to the folder where the documents are stored
-    format: json
-    delete: false
-    fields: # The fields for each document, usually in front matter
-       - name: "title"
-         label: "title"
-         widget: "string"
-       - name: "social"
-         label: "media"
-         widget: "object"
-         fields:
-         - {label: "facebook", name: "fb", widget: string}
-         - {label: "messenger", name: "me", widget: string}
-         - {label: "instagram", name: "ins", widget: string}
-       - name: "contact"
-         label: "Contact"
-         widget: "object"
-         fields:
-          - {label: "Phone 1", name: "phone1", widget: number}
-          - {label: "Phone 2", name: "phone2", widget: number}
-          - {label: "Phone 3", name: "phone3", widget: number}
-       - name: "home"
-         label: "home"
-         widget: "object"
-         fields:
-         - {label: "Short description", name: "description", widget: string}
-         - {label: "image header", name: "img", widget: image}
-         - label: "transition"
-           name: "trans"
-           widget: "list"
-           fields:
-             - {label: "Nom", name: "tab", widget: string}
-       - name: "about"
-         label: "Qui sommes-nous?"
-         widget: "object"
-         fields:
-         - {label: "présentez-Vous", name: "content", widget: markdown}
-         - {label: "Nom de directeur", name: "auther", widget: string }
-       - name: "config"
-         label: "Danger zone ! don't change!!"
-         widget: "object"
-         fields:
-         - {label: "jivo id", name: "jivo_id", widget: string , default: "blocked"}
-         - {label: "embed ins", name: "embed_ins", widget: string, default: "" }
-         - {label: "embed fb", name: "embed_fb", widget: string, default: "" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
