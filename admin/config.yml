@@ -19,7 +19,7 @@ collections:
       - label: "post"
         name: "post"
         widget: "object"
-         - fields:
+        fields:
             - {label: "Publish", name: "publish", widget: "boolean", default: true}
             - {label: "section", name: "section", widget: "select",options: ["general", "s.education","tech","phy","psy","didac",]}
             - {label: "Title", name: "title", widget: "string"}
