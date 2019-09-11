@@ -69,7 +69,7 @@ function clean(done) {
 // })
 
 // generate file json
-function generatejson(done) { 
+function generatejson(done) {
     jsonConcat({
       src: './posts',
       dest: "./config.json"

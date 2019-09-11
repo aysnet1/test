@@ -4,8 +4,7 @@
   "description": "generate file json sedtn.org",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build"
   },
   "keywords": [
     "sedtn"
