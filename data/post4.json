@@ -1,0 +1,22 @@
+{
+    "glossary": {
+        "title": "exampooooooooooooooooooooooooole glossary",
+		"GlossDiv": {
+            "title": "oooooooooooooooooooooS",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SooooooooooooooooooooooooooooooooooooooooGML",
+					"SortAs": "SGMooooooooooooooooooooooL",
+					"GlossTerm": "Stooooooooooooooooooooooooandard Generalized Markup Language",
+					"Acronym": "SoooooooooooooooooooooGML",
+					"Abbrev": "ISO 88ooooooooooooooooooooooo79:1986",
+					"GlossDef": {
+                        "para": "A meta-markup languoooooooooooooooooooooooooooooooage, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XooooooooooooooooooooML"]
+                    },
+					"GlossSee": "maroooooooooooooooooookup"
+                }
+            }
+        }
+    }
+}

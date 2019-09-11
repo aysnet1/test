@@ -1,0 +1,22 @@
+{
+    "glossary": {
+        "title": "bffffffffffffffffffigo",
+		"GlossDiv": {
+            "title": "tfffffffffffffg",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGffffffffffffffffffffffffffffML",
+					"GlossTerm": "Stanffffffffffffffffffffffffdard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 887ffffffffffffffff9:1986",
+					"GlossDef": {
+                        "para": "A meta-markupfffffffffffffffffffffffffffffffff language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GffffffffffffffffML", "XML"]
+                    },
+					"GlossSee": "po"
+                }
+            }
+        }
+    }
+}
