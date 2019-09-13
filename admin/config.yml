@@ -13,12 +13,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: "json"
     fields:
-      - label: "Author"
-        name: "title"
-        widget: "string"
       - label: "post"
         name: "post"
-        widget: "object"
+        widget: "list"
+        allow_add: false
         fields:
             - {label: "Publish", name: "publish", widget: "boolean", default: true}
             - {label: "section", name: "section", widget: "select",options: ["general", "s.education","tech","phy","psy","didac",]}
