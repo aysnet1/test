@@ -15,6 +15,11 @@ collections:
     fields:
       - label: "post"
         name: "title"
+        widget: "string"
+        hidden: true
+        default: "."
+      - label: "post"
+        name: "post"
         widget: "list"
         allow_add: false
         fields:
