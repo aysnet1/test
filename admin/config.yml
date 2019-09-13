@@ -14,7 +14,7 @@ collections:
     format: "json"
     fields:
       - label: "post"
-        name: "post"
+        name: "title"
         widget: "list"
         allow_add: false
         fields:
